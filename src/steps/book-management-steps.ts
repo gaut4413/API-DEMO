@@ -3,7 +3,7 @@ import supertest from "supertest"
 import { deleteRequest, getRequest, postRequest, putRequest } from "../support/apiCalls"
 import { addBook } from "../support/apiObjects"
 
-interface apiObj{
+export interface apiObj{
     storedValue?:{}
 }
 
