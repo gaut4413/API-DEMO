@@ -45,7 +45,7 @@ The framework includes a Jenkins pipeline for continuous integration:
 - **Checkout**: The pipeline checks out the main branch of the repository.
 - **Build**: Executes the build using the `Jenkinsfile` in the repository, which runs the tests.
 - **Reporting**: After the build, the pipeline publishes the HTML report in Jenkins.
-
+## IMPORTANT- YOU SHOULD HAVE A NODEJS tool added in tool config of Jenkins to run the pipeline. Name the nodejs tool as 'Nodejs' given in the jenkinsfile.
 ## Notes
 
 - Ensure the `.result` folder from the previous run is fully downloaded before opening the HTML report in a browser.
