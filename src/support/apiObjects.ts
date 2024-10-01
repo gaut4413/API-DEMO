@@ -14,3 +14,16 @@ export function addBook(id:number, title:string, desc:string,pageCount:number, e
           
     }
 }
+
+
+
+export function addAuthor(id:number, idBook:number, firstName:string,lastName:string){
+
+    return{
+        "id": id,
+        "idBook": idBook,
+        "firstName": "string",
+        "lastName": "string"
+      
+    }
+}
