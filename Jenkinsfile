@@ -20,7 +20,7 @@ pipeline {
                     // Use Node.js environment set in Jenkins
                     withEnv(["PATH+NODE=${tool NODE_VERSION}/bin"]) {
                         // Run npm install to install project dependencies
-                        sh 'npm install'
+                        bat 'npm install'
                     }
                 }
             }
@@ -30,7 +30,7 @@ pipeline {
             steps {
                 script {
                     // Run the tests using npm
-                    sh 'npm run wdio'
+                    bat 'npm run wdio'
                 }
             }
         }
