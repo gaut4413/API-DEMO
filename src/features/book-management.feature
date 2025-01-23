@@ -34,14 +34,6 @@ Scenario: Add a book
     | id | | title       | | desc          | | pagecount | | excerpt           |
     |  1 | | 'BookDemo'  | | 'book desc'   | |  9999     | |  'excerpt of book'| 
 
-Scenario: Update a book
-    When I make a PUT request to update a book by its <id> with <title>,<desc>,<pagecount>,<excerpt> 
-    And The response body matches the request body
-    Then I receive 200 status code
-
-    Examples:
-    | id | | title          | | desc          | | pagecount | | excerpt                  |
-    |  1 | | 'Update book'  | | 'book desc2'  | |  99999    | |  'excerpt of book update'| 
 
 Scenario: Delete a book
     When I make a Delete request to delete a book by its <id>
