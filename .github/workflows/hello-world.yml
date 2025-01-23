@@ -3,6 +3,7 @@ name : hello world workflow
 on:
     push:
         branches:
+
             -main
 
 jobs:
@@ -15,5 +16,5 @@ jobs:
               with: 
                 node-version: '20'
 
-            - run: npm -i
+            - run: npm install
             - run: npm run wdio
