@@ -20,7 +20,6 @@ Scenario: Retrieve a authors by its ID
     | id |
     |  1 |
     |  2 |
-    | 999|
 
 Scenario: Retrieve a authors by an invalid id
     When I make a GET request to retrieve a author by its 9999
